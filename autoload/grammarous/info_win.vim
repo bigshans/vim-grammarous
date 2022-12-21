@@ -192,7 +192,7 @@ function! grammarous#info_win#close()
     end
 
     execute prev_win . 'wincmd w'
-    wincmd c
+    call grammarous#info_win#action_quit()
     execute cur_win . 'wincmd w'
 
     return 1
